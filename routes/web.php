@@ -28,7 +28,7 @@ Route::post(uri:'/users', action: [UserController::class, 'store'])->name('users
 Route::post(uri:'/users/{user}', action: [UserController::class, 'show'])->name('users.show');
 
 
-Route::post(uri:'/users/{user}/edit', action: [UserController::class, 'edit'])->name('users.edit');
+Route::get(uri:'/users/{user}/edit', action: [UserController::class, 'edit'])->name('users.edit');
 
 Route::put(uri:'/users/{user}', action: [UserController::class, 'update'])->name('users.update');
 
